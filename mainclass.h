@@ -5,22 +5,18 @@
 using namespace std;
 
 class Transport {
-private:
-	string number;
-	int wheels;
-	int ageLimit;
 public:
-	Transport();
-	Transport(string num, int whe, int agel);
-	Transport(Transport& t);
+	string number;
+	size_t wheels;
+	int ageLimit;
+	//public:
+	Transport(string num = 0, size_t whe = 0, int agel = 0) : number(num), wheels(whe), ageLimit(agel) {}
 
-	string getNumber();
-	int getWheels();
-	int getAgeLim();
+	string getNumber() const { return number; }
+	size_t getWheels() const { return wheels; }
+	int getAgeLim() const { return ageLimit; }
 
-	void inTransport(istream& i);
-	void printTransport(ostream& o);
-
-	friend istream& operator>>(istream& is, Transport& t);
-	friend ostream& operator<<(ostream& os, Transport& t);
+	void setNumber(string num) { number = num; }
+	void setWheels(size_t whe) { wheels = whe; }
+	void setAgeLim(int agel) { ageLimit = agel; }
 };
