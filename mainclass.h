@@ -5,11 +5,11 @@
 using namespace std;
 
 class Transport {
-public:
+protected:
 	string number;
 	size_t wheels;
 	int ageLimit;
-	//public:
+	public:
 	Transport(string num = 0, size_t whe = 0, int agel = 0) : number(num), wheels(whe), ageLimit(agel) {}
 
 	string getNumber() const { return number; }
