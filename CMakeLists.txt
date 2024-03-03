@@ -8,4 +8,5 @@ include_directories(.)
 add_executable(Public_Transport
         main.cpp
         mainclass.h
-        tasks.txt)
+        tasks.txt
+        taxi.h)

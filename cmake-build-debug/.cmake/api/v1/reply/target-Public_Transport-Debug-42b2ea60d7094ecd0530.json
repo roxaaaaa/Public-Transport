@@ -103,7 +103,8 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				1
+				1,
+				3
 			]
 		},
 		{
@@ -131,6 +132,11 @@
 			"backtrace" : 1,
 			"path" : "tasks.txt",
 			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "taxi.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"
